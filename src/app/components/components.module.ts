@@ -7,15 +7,16 @@ import { NoticiaComponent } from './noticia/noticia.component';
 
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    IonicModule,
+  declarations: [
     NoticiasComponent,
     NoticiaComponent
   ],
+  imports: [
+    CommonModule,
+    IonicModule
+  ],
   exports: [
     NoticiasComponent
-  ]
+  ],
 })
 export class ComponentsModule { }
