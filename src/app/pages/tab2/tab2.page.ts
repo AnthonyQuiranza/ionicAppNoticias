@@ -9,4 +9,5 @@ export class Tab2Page {
 
   constructor() {}
 
+  categorias = ['business', 'entertainment', 'general', 'health', 'science' , 'sports', 'technology'];
 }

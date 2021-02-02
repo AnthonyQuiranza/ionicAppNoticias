@@ -4,28 +4,9 @@
 
   <ion-col size="12" size-lg="3" size-md="4" size-sm="6" size-xs="12"
    *ngFor="let noticias of noticias; let i = index">
-  <ion-card color="dark">
-  <ion-card-header>
-    <ion-card-subtitle>
-      <span class="text-primary">
-          {{i + 1}}.
-      </span>
-      <span class="noticia-source-name">
-        {{noticias.source.name}}
-      </span>
-    </ion-card-subtitle>
-    <ion-card-title>
-      {{noticias.title}}
-    </ion-card-title>
-  </ion-card-header>
-  <ion-img *ngIf="noticias.urlToImage"
-  [src]="noticias.urlToImage"></ion-img>
-  <ion-card-content>
-    <p>
-      {{noticias.description}}
-    </p>
-  </ion-card-content>
-  </ion-card>
+
+    <app-noticia [noticias]="noticias" [indice]="i"></app-noticia>
+
   </ion-col>
 
   </ion-row>
